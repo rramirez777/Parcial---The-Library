@@ -116,9 +116,21 @@ class Bibliotecario:
 
         def crear_libro(self):
             titulo = input("Titulo: ").strip()
-            genero = input("Genero: ").strip()
-            codigo = input("Codigo: ").strip()
             generos = ["Sci-fi", "Terror", "Historia"]
+            print("Elige el género del libro:")
+            for idx, gen in enumerate(generos, 1):
+                print(f"{idx}. {gen}")
+            while True:
+                try:
+                    opcion = int(input("Número de género: "))
+                    if 1 <= opcion <= len(generos):
+                        genero = generos[opcion - 1]
+                        break
+                    else:
+                        print("Opción inválida. Intenta de nuevo.")
+                except ValueError:
+                    print("Ingresa un número válido.")
+            codigo = input("Codigo: ").strip()
             libro = self.Libro(titulo, codigo, genero, generos)
             self._libros.append(libro)
             print("Libro creado con éxito:")
