@@ -14,5 +14,9 @@ Bibliotecario: Similar al usuario en informacion, puede agregar libros y clasifi
 Libro: El libro tiene; titulo, género (de aqui salen las 3 categorias Sc-fi, Terror e Hisoria) e ISBN
 
 
+Al efectuar el codigo te preguntara que tipo de usuario eres
 
+Si eres un usuario corriente te pedira crear tu usuario y tras llenar los datos te los mostrara, luego te preguntara si quieres buscar libros por categoria, y te mostrará los de la categoria que quieras
+
+Si eres bibliotecario te pedira que entres tus datos, y luego te preguntara si quieres agregar libros, donde llenaraa con los datos del libro y podras ver que libros hay
 
